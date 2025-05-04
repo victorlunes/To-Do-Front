@@ -6,6 +6,10 @@ header {
   position: relative;
 }
 
+.nameId {
+  color: var(--color-title-card);
+}
+
 button {
   margin-left: auto;
   font-size: 1.5rem;
@@ -19,7 +23,7 @@ button {
   top: 7rem;
   right: 4rem;
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid #70e12f;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -60,8 +64,9 @@ button {
   justify-content: center;
   align-items: center;
   margin: 3rem;
-  font-size: 5rem;
+  font-size: 5rem; 
   letter-spacing: 3px;
+  color: var(--color-title-card);
 }
 
 .task-contents {
@@ -74,10 +79,10 @@ button {
 .card-contents {
   display: flex;
   flex-direction: column;
-  background: #f7f9f9;
+  background: var(--color-background-card);
   border-radius: 25px;
   border-style: solid;
-  border-color: #b7867b;
+  border-color: var(--color-green);
   padding: 2rem;
   gap: 2rem;
   width: 300px;
@@ -85,10 +90,15 @@ button {
   overflow: auto;
 }
 
+.card-contents {
+  color: var(--color-text-card);
+}
+
 .title-task-card {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
 }
 
 .card-contents p {

@@ -3,10 +3,18 @@
   padding: 0;
 }
 
-/* Estilize o body como quiser */
 body {
-  background-color: #eae0d6;
+  background-color: var(--background-dark);
   margin: 0;
   padding: 0;
   font-family: "Bree Serif", serif;
+}
+
+:root {
+  --color-green: #00ff91;
+  --color-background-card: #181818;
+  --color-red: #ff4c4c;
+  --color-text-card:#b4b4b4;
+  --color-title-card: #ffffff;
+  --background-dark: #000000;
 }
