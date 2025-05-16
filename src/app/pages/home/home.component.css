@@ -22,8 +22,8 @@ button {
   position: absolute;
   top: 7rem;
   right: 4rem;
-  background-color: white;
-  border: 1px solid #70e12f;
+  background-color: var(--color-background-card);
+  border: 2px solid var(--color-green);
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
@@ -37,7 +37,13 @@ button {
 }
 
 .options a {
+  color: var(--color-title-card);
   text-decoration: none;
+}
+
+.options a:hover {
+  color: var(--color-green);
+  transition-duration: 450ms;
 }
 
 .options i {
@@ -64,7 +70,7 @@ button {
   justify-content: center;
   align-items: center;
   margin: 3rem;
-  font-size: 5rem; 
+  font-size: 5rem;
   letter-spacing: 3px;
   color: var(--color-title-card);
 }
@@ -112,6 +118,33 @@ button {
 
 .creation-date-task {
   font-size: 1.4rem;
+}
+
+.card-contents {
+  position: relative;
+}
+
+.dropdown-card {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #33333315;
+  border-radius: 7px;
+  padding: 8px;
+  z-index: 100;
+}
+
+.dropdown-card ul {
+  list-style: none;
+}
+
+.dropdown-card li {
+  padding: 5px 10px;
+}
+
+.text-edition {
+  text-decoration: none;
+  color: var(--color-title-card);
 }
 
 footer {

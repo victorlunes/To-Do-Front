@@ -11,10 +11,9 @@
   <div class="dropdown" *ngIf="isDropdownOpen">
     <ul>
       <li class="options">
-        <a href="#"><i class="fa-solid fa-pen-to-square"></i>Nova Tarefa</a>
-      </li>
-      <li class="options">
-        <a href="#"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i>Nova Tarefa</a>
+        <a routerLink="/newTask"
+          ><i class="fa-solid fa-plus" style="color: #ffffff"></i>Nova Tarefa</a
+        >
       </li>
     </ul>
   </div>
@@ -25,8 +24,11 @@
   </section>
   <section>
     <div class="task-contents">
-      @for (task of task; track $index) {
-      <div class="card-contents">
+      @for (task of tasks; track $index) {
+      <div
+        class="card-contents"
+        (mousedown)="startPress(task)"
+      >
         <div class="title-task-card">
           <p>Tarefa:{{ task.task }}</p>
         </div>
@@ -39,6 +41,12 @@
           Última Modificação:
           {{ task.modificationDate | date : "dd/MM/yyyy HH:mm" }}
         </p>
+        <div class="dropdown-card" *ngIf="dropdownTask === task">
+          <ul>
+            <li><a class="text-edition" href="#">Editar</a></li>
+            <li><a class="text-edition" href="#">Excluir</a></li>
+          </ul>
+        </div>
       </div>
       }
     </div>
