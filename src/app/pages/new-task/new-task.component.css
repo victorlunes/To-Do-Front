@@ -1,0 +1,79 @@
+.new-task-container {
+  background-image: url("/new_task_image.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--background-dark-newTask);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-dark-newTask);
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--color-title-card);
+}
+
+.new-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  background-color: var(--background-dark-form);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 226, 226, 0.3);
+  width: 100%;
+  max-width: 800px;
+  margin: 6rem;
+}
+
+.title-task {
+  color: var(--color-title-form);
+}
+
+.title-description {
+  color: var(--color-title-form);
+}
+
+.new-task-form input {
+  font-size: 1.3rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: var(--background-dark-form);
+  color: var(--color-title-card);
+  padding: 0.70rem 1rem;
+  transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.new-task-form input:focus {
+  outline: none;
+  border: 1px solid var(--color-green); 
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.create-task-button {
+  font-size: 1rem;
+  padding: 0.80rem 3.5rem;
+  color: var(--color-title-form);
+  background-color: transparent;
+  border: 2px solid var(--color-title-form);
+  border-radius: 10px;
+  transition: border-color 0.5s ease-in-out; 
+}
+
+.create-task-button:hover {
+  border-color: var(--color-green);
+  color: var(--color-title-card);
+}

@@ -34,8 +34,8 @@ export class HomeComponent implements OnInit {
 
   startPress(task: any) {
     this.pressTimer = setTimeout(() => {
-      this.dropdownTask = task; // Abre o dropdown para esse card
-    }, 600); // tempo em ms (600 = 0.6s)
+      this.dropdownTask = task;
+    }, 600); 
   }
 
   cancelPress() {
@@ -46,7 +46,6 @@ export class HomeComponent implements OnInit {
   handleClickOutside(event: MouseEvent) {
     const target = event.target as HTMLElement;
 
-    // Fecha o dropdown apenas se o clique não for dentro de um card
     if (!target.closest('.card-contents')) {
       this.dropdownTask = null;
     }

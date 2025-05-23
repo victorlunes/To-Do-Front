@@ -16,5 +16,8 @@ body {
   --color-red: #ff4c4c;
   --color-text-card:#b4b4b4;
   --color-title-card: #ffffff;
-  --background-dark: #000000;
+  --background-dark: #0F0F0F; 
+  --background-dark-newTask: #0a0b08;
+  --background-dark-form: #131313; 
+  --color-title-form: #6a6a6a; 
 }
