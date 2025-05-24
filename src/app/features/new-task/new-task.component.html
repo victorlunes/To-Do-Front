@@ -2,15 +2,15 @@
 </header>
 <main>
     <h1>Nova Tarefa</h1>
-    <form class="new-task-form">
+    <div class="new-task-form">
         <label class="title-task">Tarefa</label>
-        <input type="text" placeholder="Tarefa" />
+        <input type="text" placeholder="Tarefa" [(ngModel)]="task"/>
         <label class="title-description">Descrição</label>
-        <input type="text" placeholder="Descrição" />
+        <input type="text" placeholder="Descrição" [(ngModel)]="descriptionTask"/>
         <div class="button">
-            <button type="submit" class="create-task-button">
+            <button type="button" class="create-task-button" (click)="createTask()">
                 Criar Tarefa
             </button>
         </div>
-    </form>
+    </div>
 </main>
